@@ -6,7 +6,7 @@ do
     qtd_colunas = int.Parse(Console.ReadLine());
     Console.Write("\nDigite a quantidade de linhas das matrizes: ");
     qtd_linhas = int.Parse(Console.ReadLine());
-} while (qtd_linhas ,< 1 && qtd_colunas < 1);
+} while (qtd_linhas < 1 && qtd_colunas < 1);
 
 int[,] matriz1 = new int[qtd_linhas, qtd_colunas], matriz2 = new int[qtd_linhas, qtd_colunas], matriz_soma = new int[qtd_linhas, qtd_colunas];
 
@@ -76,5 +76,5 @@ if (qtd_colunas == qtd_linhas)
 }
 else
 {
-    Console.WriteLine("Matriz não quadrada, impossivel soma das diagonais");
+    Console.WriteLine("Soma das diagonais impossivel por não ser matriz quadrada, quantidade de colunas devem ser iguais quantidade de linhas");
 }
