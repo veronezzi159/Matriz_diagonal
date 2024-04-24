@@ -27,13 +27,9 @@ for (int linhas = 0; linhas < qtd_linhas; linhas++)
     resultado = 0;
     for (int colunas = 0; colunas < qtd_colunas; colunas++)
     {
-        if (linhas <qtd_linhas)
-        {
-            resultado = resultado + matriz1[linhas,colunas];
-            if((qtd_colunas - 1) == colunas)
-                Console.WriteLine($"Soma da linha {linhas} é: {resultado}");
-        }
+        resultado = resultado + matriz1[linhas,colunas];        
     }
+    Console.WriteLine($"Soma da linha {linhas} é: {resultado}");
 }
 
 for (int colunas = 0; colunas < qtd_colunas; colunas++)
@@ -42,13 +38,9 @@ for (int colunas = 0; colunas < qtd_colunas; colunas++)
     resultado = 0;
     for (int linhas = 0; linhas < qtd_linhas; linhas++)
     {
-        if (colunas < qtd_colunas)
-        {
-            resultado = resultado + matriz1[linhas, colunas];
-            if ((qtd_linhas - 1) == linhas)
-                Console.WriteLine($"Soma da coluna {colunas } é: {resultado}");
-        }
+        resultado = resultado + matriz1[linhas, colunas];        
     }
+    Console.WriteLine($"Soma da coluna {colunas} é: {resultado}");
 }
 if (qtd_colunas == qtd_linhas) 
 {
@@ -68,10 +60,9 @@ if (qtd_colunas == qtd_linhas)
             if ( (linhas + colunas) == (qtd_colunas - 1))
             {
                 resultado += matriz1[linhas, colunas];
-            }
-            if ((linhas + 1 == qtd_linhas))
-                Console.WriteLine($"A soma da segunda diagonal é: {resultado}");
+            }            
         }
+        Console.WriteLine($"A soma da segunda diagonal é: {resultado}");
     }
 }
 else
