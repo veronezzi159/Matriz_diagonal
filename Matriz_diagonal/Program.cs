@@ -1,4 +1,5 @@
-﻿int qtd_linhas = 0, qtd_colunas = 0, count = 0, resultado = 0;
+﻿int qtd_linhas = 0, qtd_colunas = 0, count = 0;
+float resultado = 0;
 
 do
 {
@@ -8,7 +9,7 @@ do
     qtd_linhas = int.Parse(Console.ReadLine());
 } while (qtd_linhas < 1 && qtd_colunas < 1);
 
-int[,] matriz1 = new int[qtd_linhas, qtd_colunas], matriz2 = new int[qtd_linhas, qtd_colunas], matriz_soma = new int[qtd_linhas, qtd_colunas];
+float[,] matriz1 = new float[qtd_linhas, qtd_colunas], matriz2 = new float[qtd_linhas, qtd_colunas], matriz_soma = new float[qtd_linhas, qtd_colunas];
 
 Console.WriteLine("Matriz");
 for (int linhas = 0; linhas < qtd_linhas; linhas++)
