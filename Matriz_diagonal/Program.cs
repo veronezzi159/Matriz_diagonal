@@ -63,6 +63,7 @@ if (qtd_colunas == qtd_linhas)
                 resultado += matriz1[linhas, colunas];
             }            
         }
+        if ((colunas - 1) < 0)
         Console.WriteLine($"A soma da segunda diagonal é: {resultado}");
     }
 }
